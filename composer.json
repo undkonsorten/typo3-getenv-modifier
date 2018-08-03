@@ -1,0 +1,31 @@
+{
+	"name": "undkonsorten/typo3-getenv-modifier",
+	"type": "typo3-cms-extension",
+	"description": "Adds the new TypoScript modifier := getenv() for TYPO3 versions below 9.3",
+	"homepage": "https://www.undkonsorten.com",
+	"license": [
+		"GPL-2.0+"
+	],
+	"keywords": [
+		"getenv",
+		"dotenv",
+		"typoscript",
+		"modifier"
+	],
+	"require": {
+		"typo3/cms": "^6.2 || ^7.6 || ^8.7"
+	},
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "getenv_modifier"
+		}
+	},
+	"autoload": {
+		"psr-4": {
+			"Undkonsorten\\GetenvModifier\\": "Classes/"
+		}
+	},
+	"replace": {
+		"getenv_modifier": "self.version"
+	}
+}
