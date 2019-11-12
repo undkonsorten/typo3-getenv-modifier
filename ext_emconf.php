@@ -18,7 +18,7 @@ $EM_CONF[$_EXTKEY] = array(
         ),
     ),
     'autoload' => array(
-        'psr4' => array(
+        'psr-4' => array(
             'Undkonsorten\\GetenvModifier\\' => 'Classes/'
         )
     ),
